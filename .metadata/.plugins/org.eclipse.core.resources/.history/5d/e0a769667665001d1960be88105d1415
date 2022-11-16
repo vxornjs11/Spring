@@ -1,0 +1,31 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<script type="text/javascript">
+	function Get(){
+		stu.action = "MorderStatus.do";
+		stu.method = "get";
+		stu.submit();
+			
+			}
+		
+</script>
+<body>
+<form action="/student" name="stu">
+<input type="text" name="studentId">
+<input type="button" value="전송" onclick="Get">
+<tl>
+<input type="text" name="studentId">
+<input type="button" value="전송" onclick="Get">
+
+
+
+</form>
+
+</body>
+</html>

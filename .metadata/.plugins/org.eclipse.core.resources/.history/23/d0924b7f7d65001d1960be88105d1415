@@ -1,0 +1,10 @@
+package com.springlec.controller;
+
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class RequestMapping_02 {
+	
+		
+
+}

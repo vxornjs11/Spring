@@ -1,0 +1,5 @@
+package com.springlec.service;
+
+public interface CalcService {
+
+}

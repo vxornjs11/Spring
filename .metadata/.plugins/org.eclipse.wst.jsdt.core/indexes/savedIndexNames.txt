@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+/Users/ptk/Documents/Develoment/Spring/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+3485317677.index
+1241449981.index
+223508519.index
+544752207.index
+2043225847.index
+2320085715.index
