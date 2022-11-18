@@ -19,21 +19,30 @@ public class AController {
 	
 	//계산 입력 화면
 	@RequestMapping("/")
+	
 	public String input() {
+		
 		return "input";
+		
 	}
 	
 	//계산 실행
 	@RequestMapping("/addCalc")
+	
 	public String calc(HttpServletRequest request, Model model)  throws Exception{
+		
 		int num1 = Integer.parseInt(request.getParameter("num1"));
 		int num2 = Integer.parseInt(request.getParameter("num2"));
 		
 		int addResult = service.addAction(num1, num2);
 		int mulAction = service.mulAction(num1, num2);
+		
 		if(addResult == 20) {
+			
 			return "redirect:Pika";
+			
 		}
+		
 		model.addAttribute("num1", num1);
 		model.addAttribute("num2", num2);
 		model.addAttribute("addtion", addResult);
@@ -45,7 +54,9 @@ public class AController {
 		
 	}
 	@RequestMapping("/mulCalc")
+	
 	public String Mul(HttpServletRequest request, Model model)  throws Exception{
+		
 		int num1 = Integer.parseInt(request.getParameter("num1"));
 		int num2 = Integer.parseInt(request.getParameter("num2"));
 		
@@ -59,7 +70,10 @@ public class AController {
 
 	}
 	@RequestMapping("/Pika")
+	
 	public String Pika() {
+		
 		return "PikaChu";
+		
 	}
 }
